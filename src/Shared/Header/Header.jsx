@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <>
-        <header className="p-4 bg-blue-950 text-gray-100">
+        <header className="p-4 bg-green-500 text-gray-100">
 	<div className="md:container flex justify-between h-16 mx-auto">
 		<a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-8 h-8 dark:text-violet-400">
@@ -17,12 +17,15 @@ const Header = () => {
 				<NavLink rel="noopener noreferrer" to="/" className="flex items-center px-4 text-xl -mb-1 transition hover:border-b-2 dark:border-transparent">Home</NavLink>
 			</li>
 			<li className="flex">
+			
 				<NavLink rel="noopener noreferrer" to="/service" className="flex items-center px-4 text-xl -mb-1 transition hover:border-b-2 dark:border-transparent">Service</NavLink>
 			</li>
 			<li className="flex">
+			
 				<NavLink rel="noopener noreferrer" to="/project" className="flex items-center px-4 text-xl -mb-1 transition hover:border-b-2 dark:border-transparent dark:text-violet-400 dark:border-violet-400">Project</NavLink>
 			</li>
 			<li className="flex">
+			
 				<NavLink rel="noopener noreferrer" to="/contact" className="flex items-center px-4 text-xl -mb-1 transition hover:border-b-2 dark:border-transparent">Contact</NavLink>
 			</li>
 		</ul>

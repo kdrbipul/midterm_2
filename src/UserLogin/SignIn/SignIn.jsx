@@ -5,7 +5,6 @@ const SignIn = () => {
     return (
     <div className="w-full max-w-md p-4 my-32 rounded-md shadow sm:p-8 bg-blue-950 text-slate-50	container mx-auto">
         <h2 className="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
-        
         <form novalidate="" action="" className="space-y-8">
           <div className="space-y-4">
             <div className="space-y-2">
