@@ -6,6 +6,7 @@ import Mservice from './../Components/Mservice/Mservice';
 import Project from "../Components/Project/Project";
 import SignIn from "../UserLogin/SignIn/SignIn";
 import Contact from "../Components/Contact/Contact";
+import SignUp from "../UserLogin/SignUp/SignUp";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path:'/signin',
                 element:<SignIn />
+            },
+            {
+                path:'/signup',
+                element:<SignUp />
             }
         ]
     }
