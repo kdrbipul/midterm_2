@@ -2,18 +2,19 @@ import React from 'react';
 import { CiFacebook } from 'react-icons/ci';
 import { BsInstagram } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
+import logo from '../../assets/images/sandboarding.jpg'
 
 import "./Home.css"
 
 const Home = () => {
     return (
         <>
-        <section className="home container my-28" id="home">
+        <section className="home container mx-auto my-28" id="home">
         <div className="home_left">
             <div className="home_content">
-                <h1 className='text-4xl font-bold text-green-500'>Hi! Wlcome to our website</h1>
+                <h1 className='text-4xl font-bold text-green-500'>Hi! Welcome to our website</h1>
                 <div className="text_animation">
-                    <h3>Frontend Developer</h3>
+                    <h3>ADVENTURE TOUR</h3>
                 </div>
             </div>
             <div className="btn-box">
@@ -34,7 +35,7 @@ const Home = () => {
                 <!-- <span className="material-icons-sharp">data_object</span> --> */}
             </div>
             <div className="inner-circle">
-                <img src="./image/kader.jpg" alt="logo" />
+                <img src={logo} alt="logo" />
             </div>
         </div>
     </section>

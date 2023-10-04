@@ -123,9 +123,9 @@ section.home .home_content .text_animation h3{
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px #22C55E;
-    /* background-image: -webkit-gradient(linear,left top, left bottom,from(#22C55E),to(#22C55E)); */
-    /* background-image: -o-linear-gradient(#22C55E),var(#22C55E); */
-    /* background-image: linear-gradient(#22C55E),var(#22C55E); */
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#22C55E),to(#22C55E));
+    background-image: -o-linear-gradient(#22C55E),var(#22C55E);
+    background-image: linear-gradient(#22C55E),var(#22C55E);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -15rem 0;
@@ -167,3 +167,46 @@ section.home .home_content .text_animation h3::before{
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s ;
 }
+
+
+section.home .profile-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.home .profile-area .inner-circle img{
+    /* position: absolute; */
+    width: 20rem;
+    height: 20rem;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 1 solid #22C55E;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ }
+
+
+
+ @media only screen and (min-width:0px) and (max-width:319px){
+    section.home{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 25px auto;
+    }
+    section.home .btn-box{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    section.home .btn-box .m_btnb{
+        margin: 3px auto;
+        position: relative;
+        height: 100%;;
+    }
+
+    section.home .home_left .home_content .text_animation h3{
+        font-size: 2rem;
+        font-weight: 700;
+        margin: auto;
+    }
+ }

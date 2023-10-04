@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className="grid max-w-screen-xl  shadow-lg hover:shadow-blue-500/50  grid-cols-1 gap-8 px-8 py-16 mx-auto my-32	 rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-blue-950 text-slate-50">
+        <div className="grid max-w-screen-xl  shadow-lg hover:shadow-blue-500/50  grid-cols-1 gap-8 px-8 py-16 mx-auto my-32	 rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-green-500 text-slate-50">
 			<div className="flex flex-col justify-between">
 				<div className="space-y-2">
 					<h2 className="text-4xl font-bold leadi lg:text-5xl">Let's talk!</h2>
