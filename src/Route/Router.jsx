@@ -7,6 +7,7 @@ import Project from "../Components/Project/Project";
 import SignIn from "../UserLogin/SignIn/SignIn";
 import Contact from "../Components/Contact/Contact";
 import SignUp from "../UserLogin/SignUp/SignUp";
+import Card from './../Card/Card';
 
 const router = createBrowserRouter([
     {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
             {
                 path:'/signup',
                 element:<SignUp />
+            },
+            {
+                path:'/card',
+                element:<Card />
             }
         ]
     }

@@ -5,6 +5,9 @@ import { BsTwitter } from 'react-icons/bs';
 import logo from '../../assets/images/sandboarding.jpg'
 
 import "./Home.css"
+import Banner from '../Banner/Banner';
+import { NavLink } from 'react-router-dom';
+import Contact from '../Contact/Contact';
 
 const Home = () => {
     return (
@@ -18,8 +21,8 @@ const Home = () => {
                 </div>
             </div>
             <div className="btn-box">
-                <a href="#" className="m_btnb text-white">Hire Me</a>
-                <a href="#" className="m_btnb text-white">Let's Talk</a>
+                <NavLink to="/card" className="m_btnb text-white">Hire Me</NavLink>
+                <NavLink to="/contact" className="m_btnb text-white">Let's Talk</NavLink>
             </div>
             <div className="home-sci">
                 <a href="#" class="m_btnb"><CiFacebook /></a>
@@ -38,6 +41,12 @@ const Home = () => {
                 <img src={logo} alt="logo" />
             </div>
         </div>
+    </section>
+    <section>
+        <Banner />    
+    </section>
+    <section>
+        <Contact />
     </section>
         </>
     );
