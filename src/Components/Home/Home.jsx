@@ -11,8 +11,8 @@ const Home = () => {
         <>
         <section className="home container mx-auto my-28" id="home">
         <div className="home_left">
+                <h1 className='text-white'>Hi! Welcome to our website</h1>
             <div className="home_content">
-                <h1 className='text-4xl font-bold text-green-500'>Hi! Welcome to our website</h1>
                 <div className="text_animation">
                     <h3>ADVENTURE TOUR</h3>
                 </div>
