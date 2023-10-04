@@ -10,12 +10,13 @@ import { NavLink } from 'react-router-dom';
 import Contact from '../Contact/Contact';
 import Avater from '../../Avater/Avater';
 import Team from '../Team/Team';
+import Mservice from '../Mservice/Mservice';
 
 const Home = () => {
     return (
         <>
         <section  className="home container mx-auto my-28" id="home">
-        <div data-aos="fade-up-right" className="home_left">
+        <div data-aos="fade-up-right" data-aos-duration="3000" className="home_left">
                 <h1 className='text-white'>Hi! Welcome to our website</h1>
             <div className="home_content">
                 <div className="text_animation">
@@ -40,24 +41,19 @@ const Home = () => {
                 <span className="material-icons-sharp">code</span> -->
                 <!-- <span className="material-icons-sharp">data_object</span> --> */}
             </div>
-            <div className="inner-circle shadow-2xl">
+            <div data-aos="flip-right" data-aos-duration="3000" className="inner-circle shadow-2xl">
                 <img src={logo} alt="logo" />
             </div>
         </div>
     </section>
-    <section data-aos='slide-left'>
+    
         <Avater />
-    </section>
-    <section>
         <Banner />    
-    </section>
-    <section>
+        <Mservice />
         <Team />
-    </section>
-    <section>
         <Contact />
-    </section>
-        </>
+    
+    </>
     );
 };
 

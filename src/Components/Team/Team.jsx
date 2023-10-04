@@ -8,7 +8,7 @@ import team6 from '../../assets/images/team6.jpg'
 
 const Team = () => {
     return (
-        <section data-aos="flip-up" className="py-6 container mx-auto bg-transparent text-gray-100">
+        <section data-aos="flip-up" data-aos-duration="3000" className="py-6 container mx-auto bg-transparent text-gray-100">
         <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
             <h1 className="text-4xl font-bold leadi text-center sm:text-5xl">Our team</h1>
             <p className="max-w-2xl text-center text-white">At a assumenda quas cum earum ut itaque commodi saepe rem aspernatur quam natus quis nihil quod, hic explicabo doloribus magnam neque, exercitationem eius sunt!</p>
