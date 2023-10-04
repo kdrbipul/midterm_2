@@ -6,7 +6,7 @@ const Banner = () => {
     return (
        <>
        
-        <section className="container mx-auto bg-transparent text-gray-100">
+        <section className="container mx-auto bg-transparent text-gray-100" data-aos="zoom-in-up">
                 <h1 className="text-5xl text-center	 font-bold leadi sm:text-4xl">ABOUT ME</h1>
                 <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                     <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">

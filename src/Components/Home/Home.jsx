@@ -9,12 +9,13 @@ import Banner from '../Banner/Banner';
 import { NavLink } from 'react-router-dom';
 import Contact from '../Contact/Contact';
 import Avater from '../../Avater/Avater';
+import Team from '../Team/Team';
 
 const Home = () => {
     return (
         <>
-        <section className="home container mx-auto my-28" id="home">
-        <div className="home_left">
+        <section  className="home container mx-auto my-28" id="home">
+        <div data-aos="fade-up-right" className="home_left">
                 <h1 className='text-white'>Hi! Welcome to our website</h1>
             <div className="home_content">
                 <div className="text_animation">
@@ -44,11 +45,14 @@ const Home = () => {
             </div>
         </div>
     </section>
-    <section>
+    <section data-aos='slide-left'>
         <Avater />
     </section>
     <section>
         <Banner />    
+    </section>
+    <section>
+        <Team />
     </section>
     <section>
         <Contact />
