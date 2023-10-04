@@ -2,12 +2,13 @@ import React from 'react';
 import { CiFacebook } from 'react-icons/ci';
 import { BsInstagram } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
-import logo from '../../assets/images/sandboarding.jpg'
+import logo from '../../assets/images/girl-3.jpg'
 
 import "./Home.css"
 import Banner from '../Banner/Banner';
 import { NavLink } from 'react-router-dom';
 import Contact from '../Contact/Contact';
+import Avater from '../../Avater/Avater';
 
 const Home = () => {
     return (
@@ -30,6 +31,7 @@ const Home = () => {
                 <a href="#" class="m_btnb"><BsTwitter /></a>
             </div>
         </div>
+        
         <div className="profile-area"> 
             <div className="outer-circle">
                 {/* <!-- <span className="material-icons-sharp">design_services</span>
@@ -37,10 +39,13 @@ const Home = () => {
                 <span className="material-icons-sharp">code</span> -->
                 <!-- <span className="material-icons-sharp">data_object</span> --> */}
             </div>
-            <div className="inner-circle">
+            <div className="inner-circle shadow-2xl">
                 <img src={logo} alt="logo" />
             </div>
         </div>
+    </section>
+    <section>
+        <Avater />
     </section>
     <section>
         <Banner />    
