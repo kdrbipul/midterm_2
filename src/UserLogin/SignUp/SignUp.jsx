@@ -14,7 +14,7 @@ const SignUp = () => {
             </div>
             <div className="space-y-2">
               <label for="email" className="block text-sm">Email address</label>
-              <input type="email" name="email" id="email" placeholder="leroy@jenkins.com" className="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" />
+              <input type="email" name="email" id="email" placeholder="example@gmail.com" className="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" />
             </div>
             <div className="space-y-2">
               <div className="flex justify-between">
