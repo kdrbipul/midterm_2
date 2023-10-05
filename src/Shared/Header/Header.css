@@ -1,18 +1,17 @@
 nav{
-    background-color: rgb(23 37 84);
+    background-color: rgb(34 197 94);
     width: 100vw;
     height: 5rem;
     position: fixed;
     top:0;
     z-index: 11;
-    color: rgb(255 255 255);
 }
-
 
 .window-scroll{
-    background-color: rgb(163 230 53);
+    background-color: rgb(74 222 128);
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 }
+
 
 .nav_container{
     height: 100%;
@@ -22,14 +21,11 @@ nav{
     /* position: relative; */
 }
 
-/* nav .nav_container .sun{
-    font-size: 1.2rem;
-    color: white;
-} */
 
 nav button{
     display: none;
 }
+
 
 .nav_menu{
     display: flex;
@@ -37,23 +33,24 @@ nav button{
     gap: 4rem;
 }
 
-
 .nav_menu a{
     font-size: 0.9rem;
-    transition: var(--transition);
+    transition: all 400ms ease;
 }
 
 .nav_menu a:hover{
-    color: var(--color-bg2);
+    color: #424890;
 }
 
 
-@media only screen and (min-width:468px) and (max-width:768px) {
+
+
+@media only screen and (min-width:0px) and (max-width:319px){
     nav .nav_container button{
         display: block;
-        /* background-color: transparent; */
+        background-color: transparent;
         font-size: 1.8rem;
-        color: white;
+        color: #fff;
         cursor: pointer;
     }
     nav .nav_container button#close-menu-btn{
@@ -77,7 +74,6 @@ nav button{
         transform-origin: top right;
         opacity: 0;
     }
-
     nav .nav_container .nav_menu li:nth-child(2){
         animation-delay: 200ms;
     }
@@ -87,7 +83,15 @@ nav button{
     nav .nav_container .nav_menu li:nth-child(4){
         animation-delay: 600ms;
     }
-    
+    /* nav .nav_container .nav_menu li:nth-child(5){
+        animation-delay: 800ms;
+    }
+    nav .nav_container .nav_menu li:nth-child(6){
+        animation-delay: 1000ms;
+    }
+    nav .nav_container .nav_menu li:nth-child(7){
+        animation-delay: 1200ms;
+    } */
     @keyframes animateNavItems{
         0%{
             transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
@@ -97,19 +101,19 @@ nav button{
             opacity: 1;
         }
     }
-
     nav .nav_container .nav_menu li a{
-        background-color: var(--primary-color);
+        background-color: #6c63ff;
         box-shadow: -4rem 6rem 10rem rgba(0,0,0,0.6);
         width: 100%;
         height: 100%;
         display: grid;
         place-items: center;
-        transition: var(--transition);
+        transition: all 400ms ease;
     }
 
     nav .nav_container .nav_menu li a:hover{
-        background-color: var(--color-bg2);
-        color: var(--color-white);
+        background-color: #424890;
+        color: #fff;
     }
+
 }

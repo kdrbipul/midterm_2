@@ -6,7 +6,7 @@ body{
     background-attachment: fixed;
 }
 section.home{
-    margin-top: 5rem;
+    margin-top: 15rem;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     place-items: center;
@@ -199,6 +199,12 @@ section.home .profile-area .inner-circle img{
 
 
 
+
+          /* Media queries apply */
+
+
+
+
  @media only screen and (min-width:0px) and (max-width:319px){
     section.home{
         display: grid;
@@ -212,7 +218,7 @@ section.home .profile-area .inner-circle img{
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        
+        margin-top: 6rem;
     }
     section.home .home_left .home_content{
         margin: 0 auto;
@@ -257,7 +263,7 @@ section.home .profile-area .inner-circle img{
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        
+        margin-top: 6rem;
     }
     section.home .home_left .home_content{
         margin: 0 auto;
@@ -302,7 +308,7 @@ section.home .profile-area .inner-circle img{
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        
+        margin-top: 6rem;
     }
     section.home .home_left .home_content{
         margin: 0 auto;
@@ -339,7 +345,7 @@ section.home .profile-area .inner-circle img{
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         place-items: center;
-        margin: 0 auto;
+        margin-top: 6rem;
     }
     section.home .home_left{
         display: flex;
@@ -386,5 +392,28 @@ section.home .profile-area .inner-circle img{
     section.home .home_left h1{
         font-size: 1.45rem;
         margin: auto;
+    }
+ }
+
+ @media only screen and (min-width:993px) and (max-width:1024px){
+    /* section.home .home_left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 6rem;
+    } */
+    section.home .home_left .btn-box{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+    }
+
+    section.home .home-sci{
+        margin-left:12rem;
     }
  }
