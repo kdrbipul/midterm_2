@@ -1,114 +1,205 @@
 import React from 'react';
+import './Project.css'
+import { BiHappyHeartEyes } from 'react-icons/bi';
+import { RiProjectorLine } from 'react-icons/ri';
+import { FcRating } from 'react-icons/fc';
+import { NavLink } from 'react-router-dom';
+import web1 from '../../assets/images/website1.jpg'
+import web2 from '../../assets/images/website2.jpg'
+import web3 from '../../assets/images/website4.jpg'
+import web4 from '../../assets/images/website5.jpg'
+import web5 from '../../assets/images/website6.jpg'
+import web6 from '../../assets/images/website7.jpg'
+import web7 from '../../assets/images/website8.jpg'
+import web8 from '../../assets/images/website9.jpg'
+import web9 from '../../assets/images/website10.jpg'
+
 
 const Project = () => {
     return (
         <>
-        <section className="py-6 bg-gray-800 text-gray-100">
-	<div className="container p-4 mx-auto space-y-16 sm:p-10">
-		<div className="space-y-4 flex flex-col justify-center items-center">
-			<h3 className="text-2xl font-bold leadi sm:text-5xl">Meet our team</h3>
-			<p className="max-w-2xl text-white">At a assumenda quas cum earum ut itaque commodi saepe rem aspernatur quam natus quis nihil quod, hic explicabo doloribus magnam neque, exercitationem eius sunt!</p>
-		</div>
-		<div className="grid w-full grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
-			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?0" />
-				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm text-gray-400">Web developer</p>
-					<div className="flex mt-2 space-x-2">
-						
-						
-						
-					</div>
-				</div>
-			</div>
-			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?1" />
-				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm text-gray-400">Web developer</p>
-					<div className="flex mt-2 space-x-2">
-						
-						
-						
-					</div>
-				</div>
-			</div>
-			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?2" />
-				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm text-gray-400">Web developer</p>
-					<div className="flex mt-2 space-x-2">
-						
-						
-						
-					</div>
-				</div>
-			</div>
-			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?3" />
-				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm text-gray-400">Web developer</p>
-					<div className="flex mt-2 space-x-2">
-						
-						
-						
-					</div>
-				</div>
-			</div>
-			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?4" />
-				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm text-gray-400">Web developer</p>
-					<div className="flex mt-2 space-x-2">
-						
-						
-						
-					</div>
-				</div>
-			</div>
-			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?5" />
-				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm text-gray-400">Web developer</p>
-					<div className="flex mt-2 space-x-2">
-						
-						
-						
-					</div>
-				</div>
-			</div>
-			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?6" />
-				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm text-gray-400">Web developer</p>
-					<div className="flex mt-2 space-x-2">
-						
-						
-					</div>
-				</div>
-			</div>
-			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?7" />
-				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm text-gray-400">Web developer</p>
-					<div className="flex mt-2 space-x-2">
-						
-						
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-                
+			<section className="products container mx-auto ">
+				<article data-aos="zoom-in" data-aos-duration="3000" className="product card bg-green-500 text-white">
+						<img className="product_image" src={web1} alt="product1"/>
+						<div className="product_body">
+							<h3 className="product_name text-center text-2xl">Adventure Blog</h3>
+							<p>
+								<span className="dot green"></span>
+								<span className="dot red"></span>
+								<span className="dot black"></span>                        
+							</p>
+							<p className="product_description">
+								Get over 500 name ideas for your travel blog, or search our dashboard of 
+							</p>
+						</div>
+						<div className='flex items-center justify-around my-3 text-yellow-400'>
+							<span className='text-4xl'><BiHappyHeartEyes /></span>
+							<span className='text-4xl'><RiProjectorLine /></span>
+							<span className='text-4xl'><FcRating /></span>
+						</div>
+						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+				</article>
+				<article data-aos="zoom-out" data-aos-duration="3000" className="product card bg-green-500 text-white">
+						<img className="product_image" src={web2} alt="product1"/>
+						<div className="product_body">
+							<h3 className="product_name text-center text-2xl">E-comerce website</h3>
+							<p>
+								<span className="dot green"></span>
+								<span className="dot red"></span>
+								<span className="dot black"></span>                        
+							</p>
+							<p className="product_description">
+								Get over 500 name ideas for your travel blog, or search our dashboard of 
+							</p>
+						</div>
+						<div className='flex items-center justify-around my-3 text-yellow-400'>
+							<span className='text-4xl'><BiHappyHeartEyes /></span>
+							<span className='text-4xl'><RiProjectorLine /></span>
+							<span className='text-4xl'><FcRating /></span>
+						</div>
+						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+				</article>
+				<article data-aos="fade-right" data-aos-duration="3000" className="product card bg-green-500 text-white">
+						<img className="product_image" src={web3} alt="product1"/>
+						<div className="product_body">
+							<h3 className="product_name text-center text-2xl">Tourism</h3>
+							<p>
+								<span className="dot green"></span>
+								<span className="dot red"></span>
+								<span className="dot black"></span>                        
+							</p>
+							<p className="product_description">
+								Get over 500 name ideas for your travel blog, or search our dashboard of 
+							</p>
+						</div>
+						<div className='flex items-center justify-around my-3 text-yellow-400'>
+							<span className='text-4xl'><BiHappyHeartEyes /></span>
+							<span className='text-4xl'><RiProjectorLine /></span>
+							<span className='text-4xl'><FcRating /></span>
+						</div>
+						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+				</article>
+				<article data-aos="flip-right" data-aos-duration="3000" className="product card bg-green-500 text-white">
+						<img className="product_image" src={web4} alt="product1"/>
+						<div className="product_body">
+							<h3 className="product_name text-center text-2xl">Open AI</h3>
+							<p>
+								<span className="dot green"></span>
+								<span className="dot red"></span>
+								<span className="dot black"></span>                        
+							</p>
+							<p className="product_description">
+								Get over 500 name ideas for your travel blog, or search our dashboard of 
+							</p>
+						</div>
+						<div className='flex items-center justify-around my-3 text-yellow-400'>
+							<span className='text-4xl'><BiHappyHeartEyes /></span>
+							<span className='text-4xl'><RiProjectorLine /></span>
+							<span className='text-4xl'><FcRating /></span>
+						</div>
+						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+				</article>
+				<article data-aos="flip-up" data-aos-duration="3000" className="product card bg-green-500 text-white">
+						<img className="product_image" src={web5} alt="product1"/>
+						<div className="product_body">
+							<h3 className="product_name text-center text-2xl">Chat GPT</h3>
+							<p>
+								<span className="dot green"></span>
+								<span className="dot red"></span>
+								<span className="dot black"></span>                        
+							</p>
+							<p className="product_description">
+								Get over 500 name ideas for your travel blog, or search our dashboard of 
+							</p>
+						</div>
+						<div className='flex items-center justify-around my-3 text-yellow-400'>
+							<span className='text-4xl'><BiHappyHeartEyes /></span>
+							<span className='text-4xl'><RiProjectorLine /></span>
+							<span className='text-4xl'><FcRating /></span>
+						</div>
+						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+				</article>
+				<article data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000" className="product card bg-green-500 text-white">
+						<img className="product_image" src={web6} alt="product1"/>
+						<div className="product_body">
+							<h3 className="product_name text-center text-2xl">Humanity</h3>
+							<p>
+								<span className="dot green"></span>
+								<span className="dot red"></span>
+								<span className="dot black"></span>                        
+							</p>
+							<p className="product_description">
+								Get over 500 name ideas for your travel blog, or search our dashboard of 
+							</p>
+						</div>
+						<div className='flex items-center justify-around my-3 text-yellow-400'>
+							<span className='text-4xl'><BiHappyHeartEyes /></span>
+							<span className='text-4xl'><RiProjectorLine /></span>
+							<span className='text-4xl'><FcRating /></span>
+						</div>
+						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+				</article>
+				<article data-aos="fade-up" data-aos-duration="3000" className="product card bg-green-500 text-white">
+						<img className="product_image" src={web7} alt="product1"/>
+						<div className="product_body">
+							<h3 className="product_name text-center text-2xl">Hospital</h3>
+							<p>
+								<span className="dot green"></span>
+								<span className="dot red"></span>
+								<span className="dot black"></span>                        
+							</p>
+							<p className="product_description">
+								Get over 500 name ideas for your travel blog, or search our dashboard of 
+							</p>
+						</div>
+						<div className='flex items-center justify-around my-3 text-yellow-400'>
+							<span className='text-4xl'><BiHappyHeartEyes /></span>
+							<span className='text-4xl'><RiProjectorLine /></span>
+							<span className='text-4xl'><FcRating /></span>
+						</div>
+						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+				</article>
+				<article data-aos="flip-right" data-aos-duration="3000" className="product card bg-green-500 text-white">
+						<img className="product_image" src={web8} alt="product1"/>
+						<div className="product_body">
+							<h3 className="product_name text-center text-2xl">Security</h3>
+							<p>
+								<span className="dot green"></span>
+								<span className="dot red"></span>
+								<span className="dot black"></span>                        
+							</p>
+							<p className="product_description">
+								Get over 500 name ideas for your travel blog, or search our dashboard of 
+							</p>
+						</div>
+						<div className='flex items-center justify-around my-3 text-yellow-400'>
+							<span className='text-4xl'><BiHappyHeartEyes /></span>
+							<span className='text-4xl'><RiProjectorLine /></span>
+							<span className='text-4xl'><FcRating /></span>
+						</div>
+						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+				</article>
+				<article data-aos="zoom-in" data-aos-duration="3000" className="product card bg-green-500 text-white">
+						<img className="product_image" src={web9} alt="product1"/>
+						<div className="product_body">
+							<h3 className="product_name text-center text-2xl">Cyber Security</h3>
+							<p>
+								<span className="dot green"></span>
+								<span className="dot red"></span>
+								<span className="dot black"></span>                        
+							</p>
+							<p className="product_description">
+								Get over 500 name ideas for your travel blog, or search our dashboard of 
+							</p>
+						</div>
+						<div className='flex items-center justify-around my-3 text-yellow-400'>
+							<span className='text-4xl'><BiHappyHeartEyes /></span>
+							<span className='text-4xl'><RiProjectorLine /></span>
+							<span className='text-4xl'><FcRating /></span>
+						</div>
+						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+				</article>
+			</section>       
         </>
     );
 };
