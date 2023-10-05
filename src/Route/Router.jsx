@@ -14,6 +14,7 @@ import Exploring from "../Components/Services/ServicesDetails/Exploring/Explorin
 import ScubaDiving from "../Components/Services/ServicesDetails/ScubaDiving/ScubaDiving";
 import Sandboarding from "../Components/Services/ServicesDetails/Sandboarding/Sandboarding";
 import Paragliding from "../Components/Services/ServicesDetails/Paragliding/Paragliding";
+import Canoeing from "../Components/Services/ServicesDetails/Canoeing/Canoeing";
 
 
 const router = createBrowserRouter([
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
             {
                 path:'paragliding',
                 element:<Paragliding />
+            },
+            {
+                path:'/canoeing',
+                element:<Canoeing />
             }
         ]
     }
