@@ -19,6 +19,7 @@ import Canyoneering from "../Components/Services/ServicesDetails/Canyoneering/Ca
 import CavingAndRock from "../Components/Services/ServicesDetails/CavingAndRock/CavingAndRock";
 import ZipLining from "../Components/Services/ServicesDetails/ZipLining/ZipLining";
 import Hiking from "../Components/Services/ServicesDetails/Hiking/Hiking";
+import Geocaching from "../Components/Services/ServicesDetails/Geocaching/Geocaching";
 
 
 const router = createBrowserRouter([
@@ -101,6 +102,10 @@ const router = createBrowserRouter([
             {
                 path:'/hiking',
                 element:<Hiking />
+            },
+            {
+                path:'/geocaching',
+                element:<Geocaching />
             }
         ]
     }

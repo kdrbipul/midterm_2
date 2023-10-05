@@ -9,6 +9,7 @@ import canyoneering from '../../assets/images/canyoneering.jpg'
 import cavingAndRockClimbing from '../../assets/images/caving and rock climbing.jpg'
 import zipLining from '../../assets/images/zip-lining.jpg'
 import hiking from '../../assets/images/hiking.jpg'
+import geocaching from '../../assets/images/Geocaching.jpg'
 import { NavLink } from 'react-router-dom';
 
 const Service = () => {
@@ -201,6 +202,25 @@ const Service = () => {
                     </div>
                     <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
                         <img src={hiking} alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+                    </div>
+                </div>
+            </section>
+            <section data-aos="zoom-out-left" data-aos-duration="3000" className="bg-gray-800 my-8 text-gray-100 container mx-auto">
+                <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+                    <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+                        <h1 className="text-5xl font-bold sm:text-4xl">The 
+                            <span className="text-violet-400"> Geocaching </span> Adventure: Modern Treasure Hunt
+                        </h1>
+                        <p className="mt-6 mb-8 text-lg sm:mb-12">Embark on a modern-day treasure hunt with our guided geocaching adventures. Geocaching combines the thrill of exploration with the excitement of discovery,        
+                            <br className="hidden md:inline lg:hidden"/>
+                            leading participants to hidden treasures in some of the most intriguing locations.,........
+                        </p>
+                        <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+                            <NavLink rel="noopener noreferrer" to="/geocaching" className="px-8 py-3 text-lg font-semibold rounded bg-violet-400 hover:bg-violet-500 transition-all text-gray-900">Show More</NavLink>
+                        </div>
+                    </div>
+                    <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+                        <img src={geocaching} alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
                     </div>
                 </div>
             </section>
