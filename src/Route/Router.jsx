@@ -17,6 +17,7 @@ import Paragliding from "../Components/Services/ServicesDetails/Paragliding/Para
 import Canoeing from "../Components/Services/ServicesDetails/Canoeing/Canoeing";
 import Canyoneering from "../Components/Services/ServicesDetails/Canyoneering/Canyoneering";
 import CavingAndRock from "../Components/Services/ServicesDetails/CavingAndRock/CavingAndRock";
+import ZipLining from "../Components/Services/ServicesDetails/ZipLining/ZipLining";
 
 
 const router = createBrowserRouter([
@@ -91,6 +92,10 @@ const router = createBrowserRouter([
             {
                 path:'/cavingandrock',
                 element:<CavingAndRock />
+            },
+            {
+                path:'/ziplining',
+                element:<ZipLining />
             }
         ]
     }
