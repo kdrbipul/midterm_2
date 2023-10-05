@@ -12,6 +12,7 @@ import AboutDetails from "../AboutDetails/AboutDetails";
 import Cycling from './../Components/Services/ServicesDetails/Cycling/Cycling';
 import Exploring from "../Components/Services/ServicesDetails/Exploring/Exploring";
 import ScubaDiving from "../Components/Services/ServicesDetails/ScubaDiving/ScubaDiving";
+import Sandboarding from "../Components/Services/ServicesDetails/Sandboarding/Sandboarding";
 
 
 const router = createBrowserRouter([
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
             {
                 path:'/scubadiving',
                 element:<ScubaDiving />
+            },
+            {
+                path:'/sandboarding',
+                element:<Sandboarding />
             }
         ]
     }

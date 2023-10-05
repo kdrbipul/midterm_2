@@ -35,7 +35,7 @@ const Cycling = () => {
                         <div>
                             <ul>
                                 <li><span className="text-violet-400">Fitness Level:</span> Moderate fitness is recommended. While the routes are designed for various skill levels, a basic level of fitness will enhance your experience.</li>
-                                <li><span className="text-violet-400">Age Restrictions:</span> Participants should be at least [insert minimum age requirement].</li>
+                                <li><span className="text-violet-400">Age Restrictions:</span> Participants should be at least [<span className="text-violet-400">12+</span> minimum age requirement].</li>
                                 <li><span className="text-violet-400">What to Bring:</span> Comfortable clothing suitable for cycling, closed-toe shoes, sunscreen, and a sense of adventure.</li>
                             </ul>
                         </div>
