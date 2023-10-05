@@ -10,6 +10,8 @@ import SignUp from "../UserLogin/SignUp/SignUp";
 import Card from './../Card/Card';
 import AboutDetails from "../AboutDetails/AboutDetails";
 import Cycling from './../Components/Services/ServicesDetails/Cycling/Cycling';
+import Exploring from "../Components/Services/ServicesDetails/Exploring/Exploring";
+import ScubaDiving from "../Components/Services/ServicesDetails/ScubaDiving/ScubaDiving";
 
 
 const router = createBrowserRouter([
@@ -56,6 +58,14 @@ const router = createBrowserRouter([
             {
                 path:'/cycling',
                 element:<Cycling />
+            },
+            {
+                path:'/exploring',
+                element:<Exploring />
+            },
+            {
+                path:'/scubadiving',
+                element:<ScubaDiving />
             }
         ]
     }
