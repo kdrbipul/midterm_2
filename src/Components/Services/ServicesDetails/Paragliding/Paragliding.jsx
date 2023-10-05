@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import paragliding from '../../../../assets/images/paragliding.jpg'
 
 const Paragliding = () => {
     return (
@@ -31,8 +33,8 @@ const Paragliding = () => {
                         </h1>
                         <div>
                             <ul>
-                                <li><span className="text-violet-400">Fitness Level:</span> Sandboarding requires a moderate level of physical fitness. Participants should be able to walk on sand dunes and comfortably carry their equipment.</li>
-                                <li><span className="text-violet-400">Age Restrictions: </span> Participants should be at least [<span className="text-violet-400">18+</span> minimum age requirement].</li>
+                                <li><span className="text-violet-400">Weight and Age Restrictions:</span> Participants must meet specific weight and age requirements for safety reasons. Please check the details for each adventure.</li>
+                                <li><span className="text-violet-400">Medical Considerations: </span> Participants may be required to complete a medical questionnaire to ensure they meet the necessary health and fitness standards for paragliding.</li>
                                 <li><span className="text-violet-400">What to Bring:  </span> Wear comfortable clothing suitable for outdoor activities. Sunscreen, sunglasses, and a hat are recommended to protect against the desert sun.</li>
                             </ul>
                         </div>
@@ -42,7 +44,7 @@ const Paragliding = () => {
                         </div>
                     </div>
                     <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-                        <img src={sandboarding} alt="" className="object-contain flex items center justify-center h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+                        <img src={paragliding} alt="" className="object-contain flex items center justify-center h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
                     </div>
                 </div>
             </section>

@@ -104,7 +104,7 @@ const Service = () => {
                             through the skies like a bird. Whether you're a seasoned paraglider or a first-time flyer,......
                         </p>
                         <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                            <NavLink rel="noopener noreferrer" to="/" className="px-8 py-3 text-lg font-semibold rounded bg-violet-400 hover:bg-violet-500 transition-all text-gray-900">More Details</NavLink>
+                            <NavLink rel="noopener noreferrer" to="/paragliding" className="px-8 py-3 text-lg font-semibold rounded bg-violet-400 hover:bg-violet-500 transition-all text-gray-900">More Details</NavLink>
                         </div>
                     </div>
                 </div>

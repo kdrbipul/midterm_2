@@ -13,6 +13,7 @@ import Cycling from './../Components/Services/ServicesDetails/Cycling/Cycling';
 import Exploring from "../Components/Services/ServicesDetails/Exploring/Exploring";
 import ScubaDiving from "../Components/Services/ServicesDetails/ScubaDiving/ScubaDiving";
 import Sandboarding from "../Components/Services/ServicesDetails/Sandboarding/Sandboarding";
+import Paragliding from "../Components/Services/ServicesDetails/Paragliding/Paragliding";
 
 
 const router = createBrowserRouter([
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
             {
                 path:'/sandboarding',
                 element:<Sandboarding />
+            },
+            {
+                path:'paragliding',
+                element:<Paragliding />
             }
         ]
     }
