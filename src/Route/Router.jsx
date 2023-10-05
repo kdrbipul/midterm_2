@@ -9,6 +9,8 @@ import Contact from "../Components/Contact/Contact";
 import SignUp from "../UserLogin/SignUp/SignUp";
 import Card from './../Card/Card';
 import AboutDetails from "../AboutDetails/AboutDetails";
+import Cycling from './../Components/Services/ServicesDetails/Cycling/Cycling';
+
 
 const router = createBrowserRouter([
     {
@@ -50,6 +52,10 @@ const router = createBrowserRouter([
             {
                 path:'/aboutMeDetails',
                 element:<AboutDetails />
+            },
+            {
+                path:'/cycling',
+                element:<Cycling />
             }
         ]
     }
