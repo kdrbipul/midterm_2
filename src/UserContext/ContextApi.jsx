@@ -58,7 +58,7 @@ const ContextApi = ({children}) => {
         return ()=>{
             unsubscribe();
         }
-    })
+    },[])
 
     const authInfo = {
         createUser,

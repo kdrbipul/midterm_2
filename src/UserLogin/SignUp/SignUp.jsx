@@ -4,7 +4,7 @@ import { AuthContext } from './../../UserContext/ContextApi';
 
 const SignUp = ({children}) => {
 
-  const {createUser,googleLogin,gitHubLogin,emailVerify} = useContext(AuthContext)
+  const {createUser,googleLogin,gitHubLogin,} = useContext(AuthContext)
   const [success, setSuccess] = useState()
   const [error,setError] = useState()
   const [passwordError, setPasswordError] = useState()

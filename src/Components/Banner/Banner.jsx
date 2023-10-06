@@ -2,12 +2,13 @@ import React from 'react';
 import picture from '../../assets/images/girl-3.jpg'
 import { NavLink } from 'react-router-dom';
 
+
 const Banner = () => {
     return (
        <>
        
         <section data-aos="zoom-in" data-aos-duration="3000" className="container mx-auto bg-transparen text-gray-100" >
-                <h1 data-aos="flip-right" data-aos-duration="3000" className="text-5xl text-center	 font-bold leadi sm:text-4xl">ABOUT ME</h1>
+                <h1 data-aos="flip-right" data-aos-duration="3000" className="text-5xl text-center	 font-bold  sm:text-4xl">ABOUT ME</h1>
                 <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                     <div data-aos="zoom-in-up" data-aos-duration="3000" className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
                         <img src={picture} alt="" className="object-contain  h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
