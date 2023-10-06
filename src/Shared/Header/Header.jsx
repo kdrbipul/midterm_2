@@ -32,7 +32,7 @@ const Header = () => {
         <>
 			<nav>
 				<div className="container mx-auto nav_container">
-					<NavLink to="/"><h1 className='text-4xl text-white'>Kader</h1></NavLink>
+					<NavLink to="/"><h1 className='text-4xl text-white'>Leroy Jenkins</h1></NavLink>
 					<ul className={`nav_menu ${isOpen ? 'open' : ''}`}>
 						<li><NavLink to="/" className='text-white text-4xl'>Home</NavLink></li>
 						<li><NavLink to="/service" className='text-white text-4xl'>Service</NavLink></li>
