@@ -3,7 +3,7 @@ import picture from '../assets/images/girl-3.jpg'
 
 const Card = () => {
     return (
-        <div className="flex flex-col justify-center mx-auto my-16 max-w-xs p-6 shadow-md rounded-xl sm:px-12 bg-green-500 text-gray-100">
+        <div className="flex flex-col justify-center mx-auto my-32 max-w-xs p-6 shadow-md rounded-xl sm:px-12 bg-green-500 text-gray-100">
 	<img src={picture} alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
 	<div className="space-y-4 text-center divide-y divide-gray-700">
 		<div className="my-2 space-y-1">

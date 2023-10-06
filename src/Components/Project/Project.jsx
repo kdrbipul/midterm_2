@@ -21,7 +21,7 @@ const Project = () => {
     return (
         <>
 			<section className="products container mx-auto my-32">
-				<article data-aos="zoom-in" data-aos-duration="3000" className="product card bg-green-500 text-white">
+				<article data-aos="zoom-in" data-aos-duration="3000" className="product aboutMeDetails bg-green-500 text-white">
 						<img className="product_image" src={web1} alt="product1"/>
 						<div className="product_body">
 							<h3 className="product_name text-center text-2xl">Adventure Blog</h3>
@@ -39,9 +39,9 @@ const Project = () => {
 							<span className='text-4xl'><RiProjectorLine /></span>
 							<span className='text-4xl'><FcRating /></span>
 						</div>
-						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+						<NavLink to='/aboutMeDetails'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
 				</article>
-				<article data-aos="zoom-out" data-aos-duration="3000" className="product card bg-green-500 text-white">
+				<article data-aos="zoom-out" data-aos-duration="3000" className="product aboutMeDetails bg-green-500 text-white">
 						<img className="product_image" src={web2} alt="product1"/>
 						<div className="product_body">
 							<h3 className="product_name text-center text-2xl">E-comerce website</h3>
@@ -59,9 +59,9 @@ const Project = () => {
 							<span className='text-4xl'><RiProjectorLine /></span>
 							<span className='text-4xl'><FcRating /></span>
 						</div>
-						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+						<NavLink to='/aboutMeDetails'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
 				</article>
-				<article data-aos="fade-right" data-aos-duration="3000" className="product card bg-green-500 text-white">
+				<article data-aos="fade-right" data-aos-duration="3000" className="product aboutMeDetails bg-green-500 text-white">
 						<img className="product_image" src={web3} alt="product1"/>
 						<div className="product_body">
 							<h3 className="product_name text-center text-2xl">Tourism</h3>
@@ -79,9 +79,9 @@ const Project = () => {
 							<span className='text-4xl'><RiProjectorLine /></span>
 							<span className='text-4xl'><FcRating /></span>
 						</div>
-						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+						<NavLink to='/aboutMeDetails'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
 				</article>
-				<article data-aos="flip-right" data-aos-duration="3000" className="product card bg-green-500 text-white">
+				<article data-aos="flip-right" data-aos-duration="3000" className="product aboutMeDetails bg-green-500 text-white">
 						<img className="product_image" src={web4} alt="product1"/>
 						<div className="product_body">
 							<h3 className="product_name text-center text-2xl">Open AI</h3>
@@ -99,9 +99,9 @@ const Project = () => {
 							<span className='text-4xl'><RiProjectorLine /></span>
 							<span className='text-4xl'><FcRating /></span>
 						</div>
-						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+						<NavLink to='/aboutMeDetails'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
 				</article>
-				<article data-aos="flip-up" data-aos-duration="3000" className="product card bg-green-500 text-white">
+				<article data-aos="flip-up" data-aos-duration="3000" className="product aboutMeDetails bg-green-500 text-white">
 						<img className="product_image" src={web5} alt="product1"/>
 						<div className="product_body">
 							<h3 className="product_name text-center text-2xl">Chat GPT</h3>
@@ -119,9 +119,9 @@ const Project = () => {
 							<span className='text-4xl'><RiProjectorLine /></span>
 							<span className='text-4xl'><FcRating /></span>
 						</div>
-						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+						<NavLink to='/aboutMeDetails'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
 				</article>
-				<article data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000" className="product card bg-green-500 text-white">
+				<article data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000" className="product aboutMeDetails bg-green-500 text-white">
 						<img className="product_image" src={web6} alt="product1"/>
 						<div className="product_body">
 							<h3 className="product_name text-center text-2xl">Humanity</h3>
@@ -139,9 +139,9 @@ const Project = () => {
 							<span className='text-4xl'><RiProjectorLine /></span>
 							<span className='text-4xl'><FcRating /></span>
 						</div>
-						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+						<NavLink to='/aboutMeDetails'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
 				</article>
-				<article data-aos="fade-up" data-aos-duration="3000" className="product card bg-green-500 text-white">
+				<article data-aos="fade-up" data-aos-duration="3000" className="product aboutMeDetails bg-green-500 text-white">
 						<img className="product_image" src={web7} alt="product1"/>
 						<div className="product_body">
 							<h3 className="product_name text-center text-2xl">Hospital</h3>
@@ -159,9 +159,9 @@ const Project = () => {
 							<span className='text-4xl'><RiProjectorLine /></span>
 							<span className='text-4xl'><FcRating /></span>
 						</div>
-						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+						<NavLink to='/aboutMeDetails'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
 				</article>
-				<article data-aos="flip-right" data-aos-duration="3000" className="product card bg-green-500 text-white">
+				<article data-aos="flip-right" data-aos-duration="3000" className="product aboutMeDetails bg-green-500 text-white">
 						<img className="product_image" src={web8} alt="product1"/>
 						<div className="product_body">
 							<h3 className="product_name text-center text-2xl">Security</h3>
@@ -179,9 +179,9 @@ const Project = () => {
 							<span className='text-4xl'><RiProjectorLine /></span>
 							<span className='text-4xl'><FcRating /></span>
 						</div>
-						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+						<NavLink to='/aboutMeDetails'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
 				</article>
-				<article data-aos="zoom-in" data-aos-duration="3000" className="product card bg-green-500 text-white">
+				<article data-aos="zoom-in" data-aos-duration="3000" className="product aboutMeDetails bg-green-500 text-white">
 						<img className="product_image" src={web9} alt="product1"/>
 						<div className="product_body">
 							<h3 className="product_name text-center text-2xl">Cyber Security</h3>
@@ -199,7 +199,7 @@ const Project = () => {
 							<span className='text-4xl'><RiProjectorLine /></span>
 							<span className='text-4xl'><FcRating /></span>
 						</div>
-						<NavLink to='/card'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
+						<NavLink to='/aboutMeDetails'><button className="w-full px-8 py-3 my-4 text-lg font-semibold rounded bg-red-400 hover:bg-red-500 transition-all text-white">Hire Me</button></NavLink>
 				</article>
 			</section>       
         </>
