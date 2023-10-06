@@ -11,7 +11,7 @@ const Team = () => {
         <section data-aos="flip-up" data-aos-duration="3000" className="py-6 container mx-auto bg-transparent text-gray-100">
         <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
             <h1 className="text-4xl font-bold leadi text-center sm:text-5xl">Our team</h1>
-            <p className="max-w-2xl text-center text-white">At a assumenda quas cum earum ut itaque commodi saepe rem aspernatur quam natus quis nihil quod, hic explicabo doloribus magnam neque, exercitationem eius sunt!</p>
+            <p className="max-w-2xl text-center text-white">We have our own team, here we work with our team and try to please our client as fast as possible.</p>
             <div className="flex flex-row flex-wrap-reverse justify-center">
                 <div className="flex flex-col justify-center m-8 text-center">
                     <img alt="" className="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src={team1} />
