@@ -23,21 +23,21 @@ const SignIn = () => {
     return (
     <div className="w-full max-w-md p-4 my-32 rounded-md shadow sm:p-8 bg-blue-950 text-slate-50	container mx-auto">
         <h2 className="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
-        <form onSubmit={handleSignin} novalidate="" action="" className="space-y-8">
+        <form onSubmit={handleSignin}  action="" className="space-y-8">
           <div className="space-y-4">
             <div className="space-y-2">
-              <label for="email" className="block text-sm">Email address</label>
+              <label  className="block text-sm">Email address</label>
               <input type="email" name="email" id="email" placeholder="example@gmail.com" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400" />
             </div>
             <div className="space-y-2">
               <div className="flex justify-between">
-                <label for="password" className="text-sm">Password</label>
+                <label  className="text-sm">Password</label>
                 
               </div>
               <input type="password" name="password" id="myInput" placeholder="*****" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400" />
               <div>
                 <input type="checkbox" onClick={()=>myFunction()} />
-                <label htmlFor="" className='mx-2'>Show Password</label>
+                <label  className='mx-2'>Show Password</label>
               </div>
               <a rel="noopener noreferrer" href="#" className="text-xs hover:underline text-gray-400">Forgot password?</a>
             </div>

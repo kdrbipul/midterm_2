@@ -1,11 +1,54 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { AuthContext } from './../../UserContext/ContextApi';
 
-const SignUp = () => {
+const SignUp = ({children}) => {
+
+  const {createUser} = useContext(AuthContext)
+  const [success, setSuccess] = useState()
+  const [passwordError, setPasswordError] = useState()
+  // console.log(createUser);
 
     const handleSignup = (e) => {
       e.preventDefault();
       console.log('clicked sign up');
+      const form = e.target;
+      const name = form.name.value;
+      const email = form.email.value;
+      const password = form.password.value;
+      console.log(name,email,password);
+      createUser(email,password)
+      .then(res=>{
+          const user = res.user;
+          console.log(user);
+          setSuccess("Your registration is successful")
+          form.reset()
+          
+      })
+      .catch(error=>{
+        "Firebase Error",error;
+      })
+
+
+      // Password Validation
+      if(!/(?=.*[A-Z].*[A-Z])/.test(password)){
+        setPasswordError('Please Provide At Least Two Uppercase');
+        return false;
+      }
+      
+      if(!/(?=.*[a-z])/.test(password)){
+          setPasswordError('Please Provide At Least One Lowercase')
+          return false;
+      }
+      if(!/(?=.*[!@#$%^&*()?,?/"';:={}+_-])/.test(password)){
+          setPasswordError('Please Provide Any Of !@#$%^&*()?,?/" Special');
+          return false;
+      }
+      if(password.length <8){
+          setPasswordError('Please Provide More Than 8 Characters');
+          return false;
+      }
+      setPasswordError(' ');
     }
 
     function myFunction(){
@@ -21,30 +64,33 @@ const SignUp = () => {
         <div className="w-full max-w-md p-4 my-28 rounded-md shadow sm:p-8 bg-blue-950 text-slate-50 container mx-auto">
         <h2 className="mb-3 text-3xl font-semibold text-center">Registration Your Account</h2>
         
-        <form onSubmit={handleSignup} novalidate="" action="" className="space-y-8">
+        <form onSubmit={handleSignup}  action="" className="space-y-8">
           <div className="space-y-4">
             <div className="space-y-2">
-              <label for="email" className="block text-sm">Name</label>
-              <input type="name" name="name" id="email" placeholder="Enter your name" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-white focus:border-violet-400" required />
+              <label  className="block text-sm">Name</label>
+              <input type="name" name="name" id="name" placeholder="Enter your name" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-white focus:border-violet-400" required />
             </div>
             <div className="space-y-2">
-              <label for="email" className="block text-sm">Email address</label>
+              <label  className="block text-sm">Email address</label>
               <input type="email" name="email" id="email" placeholder="example@gmail.com" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400" required />
             </div>
             <div className="space-y-2">
               <div className="flex justify-between">
-                <label for="password" className="text-sm">Password</label>
+                <label  className="text-sm">Password</label>
               </div>
-              <input type="password" name="password" id="myInput" placeholder="*****" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400" required />
+              <input type="password" name="password" id="myInput" placeholder="*****" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400"  />
             <div>
              <input type="checkbox" onClick={()=>myFunction()} />
-             <label htmlFor="" className='mx-2'>Show Password</label>
+             <label  className='mx-2'>Show Password</label>
             </div>
               <a rel="noopener noreferrer" href="#" className="text-xs hover:underline text-gray-400">Forgot password?</a>
             </div>
-            
+            <div>
+                <span className='text-green-500 text-xl sm:text-2xl'>{success}</span>
+                <span className='text-red-500 text-xl sm:text-2xl'>{passwordError}</span>
+            </div>
           </div>
-          <button type="submit" className="w-full px-8 py-3 font-semibold rounded-md bg-violet-400 bg-cyan-400 hover:bg-cyan-500 transition">Sign in</button>
+          <button type="submit" className="w-full px-8 py-3 font-semibold rounded-md bg-violet-400 bg-cyan-400 hover:bg-cyan-500 transition">Sign Up</button>
         </form>
         <div className="flex items-center w-full my-4">
           <hr className="w-full text-gray-400"/>
@@ -67,7 +113,6 @@ const SignUp = () => {
           <p className="text-sm text-center text-gray-400">Already have an account?
           <NavLink to="/signin" rel="noopener noreferrer" className="focus:underline hover:underline">Sign In here</NavLink>
         </p>
-          
         </div>
     </div>
     );
