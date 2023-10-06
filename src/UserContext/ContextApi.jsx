@@ -15,16 +15,20 @@ export const AuthContext = createContext()
 const ContextApi = ({children}) => {
 
     const [user, setUser] = useState(null)
+    const [loading,setLoading] = useState(true)
 
     const createUser = (email,password) =>{
+        setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
     const googleLogin = () =>{
+        setLoading(true)
         return signInWithPopup(auth,googleProvider)
     }
 
     const gitHubLogin = () => {
+        setLoading(true)
         return signInWithPopup(auth,githubProvider)
     }
 
@@ -49,6 +53,7 @@ const ContextApi = ({children}) => {
     useEffect(()=>{
         const unsubscribe = onAuthStateChanged(auth, currenUser=>{
             setUser(currenUser);
+            setLoading(false)
         })
         return ()=>{
             unsubscribe();
@@ -64,6 +69,7 @@ const ContextApi = ({children}) => {
         signInUser,
         logOut,
         user,
+        loading,
     }
 
     return (

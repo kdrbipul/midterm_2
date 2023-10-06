@@ -10,17 +10,17 @@ const Contact = () => {
 				</div>
 				<img src="https://img.freepik.com/free-vector/hand-drawn-business-communication-concept_52683-77063.jpg?size=626&ext=jpg&ga=GA1.1.431260662.1696407234&semt=ais" alt="" className="p-6 h-52 md:h-64" />
 			</div>
-			<form data-aos="fade-up" data-aos-duration="3000" novalidate="" className="space-y-6">
+			<form data-aos="fade-up" data-aos-duration="3000" className="space-y-6">
 				<div>
-					<label for="name" className="text-sm">Full name</label>
+					<label  className="text-sm">Full name</label>
 					<input id="name" type="text" placeholder="" className="w-full p-3 rounded dark:bg-gray-800" required />
 				</div>
 				<div>
-					<label for="email" className="text-sm">Email</label>
+					<label  className="text-sm">Email</label>
 					<input id="email" type="email" className="w-full p-3 rounded dark:bg-gray-800" required/>
 				</div>
 				<div>
-					<label for="message" className="text-sm" required>Message</label>
+					<label  className="text-sm" required>Message</label>
 					<textarea id="message" rows="3" className="w-full p-3 rounded dark:bg-gray-800"></textarea>
 				</div>
 				<button type="submit" className="w-full p-3 text-sm font-bold tracki uppercase rounded transition bg-red-500	hover:bg-red-700 dark:text-gray-900">Send Message</button>

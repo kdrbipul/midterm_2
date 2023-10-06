@@ -20,6 +20,7 @@ import CavingAndRock from "../Components/Services/ServicesDetails/CavingAndRock/
 import ZipLining from "../Components/Services/ServicesDetails/ZipLining/ZipLining";
 import Hiking from "../Components/Services/ServicesDetails/Hiking/Hiking";
 import Geocaching from "../Components/Services/ServicesDetails/Geocaching/Geocaching";
+import PrivetRoute from './PrivetRoute/PrivetRoute';
 
 
 const router = createBrowserRouter([
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/service',
-                element:<Service />
+                element:<PrivetRoute><Service /></PrivetRoute>
             },
             {
                 path:'/mservice',

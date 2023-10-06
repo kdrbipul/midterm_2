@@ -53,9 +53,11 @@ const Header = () => {
 						<li><NavLink to="/project" className='text-white text-4xl'>Project</NavLink></li>
 						<li><NavLink to="/contact" className='text-white text-4xl'>Contact</NavLink></li>
 						{
-							user?.uid ? <li><NavLink to="/signin" className='text-white text-4xl'><button className='btn btn-success' onClick={handleLogOut}>
-								Log Out</button></NavLink></li> : ''
+							user?.uid ? <li><NavLink to="/signin" className='text-white text-4xl'><button className='btn btn-sm' onClick={handleLogOut}>Log Out</button></NavLink></li> : ''
 						}
+						<div className="w-10 rounded-full">
+							<img src={user?.photoURL} />
+						</div>
 					</ul>
 					{/* <li><i class="bi bi-brightness-high-fill sun" id="toggleDark"></i></li> */}
 					<button id="open-menu-btn" onClick={handleMenuOpen}><FaBars /></button>
