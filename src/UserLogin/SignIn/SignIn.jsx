@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { AuthContext } from './../../UserContext/ContextApi';
 
 const SignIn = () => {
 
-
+  const {signInUser} = useContext(AuthContext)
+  const [success,setSuccess] = useState()
+  const [error,setError] = useState()
 
   const handleSignin = (e) =>{
     e.preventDefault();
     console.log("clicked the button");
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+    signInUser(email,password)
+    .then(res=>{
+      const user = res.user;
+      console.log(user);
+      setSuccess("You are a successfully login")
+      form.reset();
+    })
+    .catch(error=>{
+      setError("You are a hacker")
+    })
   }
 
   function myFunction() {
@@ -41,6 +58,10 @@ const SignIn = () => {
               </div>
               <a rel="noopener noreferrer" href="#" className="text-xs hover:underline text-gray-400">Forgot password?</a>
             </div>
+          </div>
+          <div>
+            <span className='text-green-500 text-xl sm:text-2xl'>{success}</span>
+            <span className='text-red-500 text-xl sm:text-2xl'>{error}</span>
           </div>
           <button type="submit" className="w-full px-8 py-3 font-semibold rounded-md bg-violet-400 bg-cyan-400 hover:bg-cyan-500 transition">Sign in</button>
         </form>

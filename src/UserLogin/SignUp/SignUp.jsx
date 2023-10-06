@@ -83,7 +83,7 @@ const SignUp = ({children}) => {
              <input type="checkbox" onClick={()=>myFunction()} />
              <label  className='mx-2'>Show Password</label>
             </div>
-              <a rel="noopener noreferrer" href="#" className="text-xs hover:underline text-gray-400">Forgot password?</a>
+              
             </div>
             <div>
                 <span className='text-green-500 text-xl sm:text-2xl'>{success}</span>
