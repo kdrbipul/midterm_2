@@ -15,10 +15,12 @@ import web8 from '../../assets/images/website9.jpg'
 import web9 from '../../assets/images/website10.jpg'
 
 
+
 const Project = () => {
+	
     return (
         <>
-			<section className="products container mx-auto ">
+			<section className="products container mx-auto my-32">
 				<article data-aos="zoom-in" data-aos-duration="3000" className="product card bg-green-500 text-white">
 						<img className="product_image" src={web1} alt="product1"/>
 						<div className="product_body">
