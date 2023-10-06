@@ -3,7 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const SignUp = () => {
 
-
+    const handleSignup = (e) => {
+      e.preventDefault();
+      console.log('clicked sign up');
+    }
 
     function myFunction(){
       var x = document.getElementById('myInput')
@@ -18,21 +21,21 @@ const SignUp = () => {
         <div className="w-full max-w-md p-4 my-28 rounded-md shadow sm:p-8 bg-blue-950 text-slate-50 container mx-auto">
         <h2 className="mb-3 text-3xl font-semibold text-center">Registration Your Account</h2>
         
-        <form novalidate="" action="" className="space-y-8">
+        <form onSubmit={handleSignup} novalidate="" action="" className="space-y-8">
           <div className="space-y-4">
             <div className="space-y-2">
               <label for="email" className="block text-sm">Name</label>
-              <input type="name" name="name" id="email" placeholder="Enter your name" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-white focus:border-violet-400" />
+              <input type="name" name="name" id="email" placeholder="Enter your name" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-white focus:border-violet-400" required />
             </div>
             <div className="space-y-2">
               <label for="email" className="block text-sm">Email address</label>
-              <input type="email" name="email" id="email" placeholder="example@gmail.com" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400" />
+              <input type="email" name="email" id="email" placeholder="example@gmail.com" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400" required />
             </div>
             <div className="space-y-2">
               <div className="flex justify-between">
                 <label for="password" className="text-sm">Password</label>
               </div>
-              <input type="password" name="password" id="myInput" placeholder="*****" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400" />
+              <input type="password" name="password" id="myInput" placeholder="*****" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400" required />
             <div>
              <input type="checkbox" onClick={()=>myFunction()} />
              <label htmlFor="" className='mx-2'>Show Password</label>
@@ -41,8 +44,7 @@ const SignUp = () => {
             </div>
             
           </div>
-          <button type="button" className="w-full px-8 py-3 font-semibold rounded-md bg-violet-400 bg-cyan-400		 hover:bg-cyan-500 transition">Sign in</button>
-          
+          <button type="submit" className="w-full px-8 py-3 font-semibold rounded-md bg-violet-400 bg-cyan-400 hover:bg-cyan-500 transition">Sign in</button>
         </form>
         <div className="flex items-center w-full my-4">
           <hr className="w-full text-gray-400"/>

@@ -3,6 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 const SignIn = () => {
 
+
+
+  const handleSignin = (e) =>{
+    e.preventDefault();
+    console.log("clicked the button");
+  }
+
   function myFunction() {
     var x = document.getElementById("myInput");
     if (x.type === "password") {
@@ -16,7 +23,7 @@ const SignIn = () => {
     return (
     <div className="w-full max-w-md p-4 my-32 rounded-md shadow sm:p-8 bg-blue-950 text-slate-50	container mx-auto">
         <h2 className="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
-        <form novalidate="" action="" className="space-y-8">
+        <form onSubmit={handleSignin} novalidate="" action="" className="space-y-8">
           <div className="space-y-4">
             <div className="space-y-2">
               <label for="email" className="block text-sm">Email address</label>
@@ -35,8 +42,7 @@ const SignIn = () => {
               <a rel="noopener noreferrer" href="#" className="text-xs hover:underline text-gray-400">Forgot password?</a>
             </div>
           </div>
-          <button type="button" className="w-full px-8 py-3 font-semibold rounded-md bg-violet-400 bg-cyan-400		 hover:bg-cyan-500 transition">Sign in</button>
-          
+          <button type="submit" className="w-full px-8 py-3 font-semibold rounded-md bg-violet-400 bg-cyan-400 hover:bg-cyan-500 transition">Sign in</button>
         </form>
         <div className="flex items-center w-full my-4">
           <hr className="w-full text-gray-400"/>
