@@ -8,7 +8,7 @@ const SignUp = ({children}) => {
   const [success, setSuccess] = useState()
   const [error,setError] = useState()
   const [passwordError, setPasswordError] = useState()
-  const [currentUser, setCurrentUser] = useState()
+  // const [currentUser, setCurrentUser] = useState()
   // console.log(createUser);
 
 
@@ -16,16 +16,16 @@ const SignUp = ({children}) => {
   // Gmail and password login
     const handleSignUp = (e) => {
       e.preventDefault();
-      console.log('clicked sign up');
+      // console.log('clicked sign up');
       const form = e.target;
       const name = form.name.value;
       const email = form.email.value;
       const password = form.password.value;
-      console.log(name,email,password);
+      // console.log(name,email,password);
       createUser(email,password)
       .then(res=>{
           const user = res.user;
-          console.log(user);
+          // console.log(user);
           setSuccess("Your registration is successful")
           form.reset()
       })
@@ -63,7 +63,7 @@ const SignUp = ({children}) => {
       googleLogin()
       .then(result=>{
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         setSuccess("Your google login is successfully")
       })
       .catch(error=>{
@@ -78,7 +78,7 @@ const SignUp = ({children}) => {
       gitHubLogin()
       .then(result=>{
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         setSuccess("Your github login is successfully")
       })
       .cath(error=>{

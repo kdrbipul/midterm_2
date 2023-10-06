@@ -14,15 +14,15 @@ const SignIn = () => {
 
   const handleSignin = (e) =>{
     e.preventDefault();
-    console.log("clicked the button");
+    // console.log("clicked the button");
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+    // console.log(email, password);
     signInUser(email,password)
     .then(res=>{
       const user = res.user;
-      console.log(user);
+      // console.log(user);
       setSuccess("You are a successfully login")
       form.reset();
     })
@@ -38,7 +38,7 @@ const SignIn = () => {
     googleLogin()
     .then(result=>{
       const user = result.user;
-      console.log(user);
+      // console.log(user);
       setSuccess("Your google login is successfully")
     })
     .catch(error=>{
@@ -53,7 +53,7 @@ const SignIn = () => {
     gitHubLogin()
     .then(result=>{
       const user = result.user;
-      console.log(user);
+      // console.log(user);
       setSuccess("Your github login is successfully")
     })
     .cath(error=>{
@@ -65,7 +65,7 @@ const SignIn = () => {
     const handleEmailBlur = (e) =>{
     // e.preventDefault();
     const email = e.target.value;
-    console.log(email);
+    // console.log(email);
     setUserEmail(email);
   }
 
