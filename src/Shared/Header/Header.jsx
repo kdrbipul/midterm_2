@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css'
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 // import logo from "../../assets/"
+import { AuthContext } from './../../UserContext/ContextApi';
 
 
 const Header = () => {
 
-
+	const {user,logOut} = useContext(AuthContext);
 	const [isOpen, setIsOpen] = useState(false);
+	// const [userlogOut, setUserLogOut] = useState()
 
 	window.addEventListener('scroll',function(){
 		this.document.querySelector('nav').classList.toggle('window-scroll',window.scrollY>0);
@@ -26,6 +28,18 @@ const Header = () => {
 	const handleMenuClose = () =>{
 		setIsOpen(false)
 	}
+
+
+	// Log Out Process
+	const handleLogOut = () =>{
+		logOut()
+		.then(()=>{
+			alert("Successfully Log Out")
+		})
+		.catch(error=>{
+			error;
+		})
+	}
 	
 
     return (
@@ -38,6 +52,10 @@ const Header = () => {
 						<li><NavLink to="/service" className='text-white text-4xl'>Service</NavLink></li>
 						<li><NavLink to="/project" className='text-white text-4xl'>Project</NavLink></li>
 						<li><NavLink to="/contact" className='text-white text-4xl'>Contact</NavLink></li>
+						{
+							user?.uid ? <li><NavLink to="/signin" className='text-white text-4xl'><button className='btn btn-success' onClick={handleLogOut}>
+								Log Out</button></NavLink></li> : ''
+						}
 					</ul>
 					{/* <li><i class="bi bi-brightness-high-fill sun" id="toggleDark"></i></li> */}
 					<button id="open-menu-btn" onClick={handleMenuOpen}><FaBars /></button>

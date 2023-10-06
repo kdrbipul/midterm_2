@@ -78,9 +78,11 @@ const SignIn = () => {
     }
 
     // password reset
-    forgatePassword()
+    forgatePassword( userEmail)
     .then(()=> {
+      const form = e.target;
       alert("Check your email address and reset password")
+      form.reset()
     })
     .catch(error=>{
       error;

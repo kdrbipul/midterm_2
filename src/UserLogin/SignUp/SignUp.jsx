@@ -8,8 +8,12 @@ const SignUp = ({children}) => {
   const [success, setSuccess] = useState()
   const [error,setError] = useState()
   const [passwordError, setPasswordError] = useState()
+  const [currentUser, setCurrentUser] = useState()
   // console.log(createUser);
 
+
+
+  // Gmail and password login
     const handleSignUp = (e) => {
       e.preventDefault();
       console.log('clicked sign up');
@@ -53,7 +57,7 @@ const SignUp = ({children}) => {
       setPasswordError(' ');
     }
 
-
+    // Google login system
     const handleGoogleLogin = (e) =>{
       e.preventDefault();
       googleLogin()
@@ -68,7 +72,7 @@ const SignUp = ({children}) => {
   
     }
   
-  
+  // Github login system
     const handleGitHubLogin = (e) => {
       e.preventDefault();
       gitHubLogin()
@@ -82,6 +86,8 @@ const SignUp = ({children}) => {
       })
     }
 
+
+    // Show password system
     function myFunction(){
       var x = document.getElementById('myInput')
       if(x.type === 'password'){
