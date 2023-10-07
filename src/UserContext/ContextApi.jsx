@@ -51,8 +51,8 @@ const ContextApi = ({children}) => {
 
 
     useEffect(()=>{
-        const unsubscribe = onAuthStateChanged(auth, currenUser=>{
-            setUser(currenUser);
+        const unsubscribe = onAuthStateChanged(auth, currentUser=>{
+            setUser(currentUser);
             setLoading(false)
         })
         return ()=>{

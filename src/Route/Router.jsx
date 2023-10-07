@@ -21,6 +21,7 @@ import ZipLining from "../Components/Services/ServicesDetails/ZipLining/ZipLinin
 import Hiking from "../Components/Services/ServicesDetails/Hiking/Hiking";
 import Geocaching from "../Components/Services/ServicesDetails/Geocaching/Geocaching";
 import PrivetRoute from './PrivetRoute/PrivetRoute';
+import Nothing from "../Nothing/Nothing";
 
 
 const router = createBrowserRouter([
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/service',
-                element:<PrivetRoute><Service /></PrivetRoute>
+                element:<Service />
             },
             {
                 path:'/mservice',
@@ -109,6 +110,10 @@ const router = createBrowserRouter([
                 element:<Geocaching />
             }
         ]
+    },
+    {
+        path:'/*',
+        element:<Nothing />
     }
 ])
 

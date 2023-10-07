@@ -53,6 +53,7 @@ nav button{
         color: #fff;
         cursor: pointer;
     }
+    
     nav .nav_container button#close-menu-btn{
         display: none;
     }
