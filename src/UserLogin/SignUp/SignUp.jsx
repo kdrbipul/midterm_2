@@ -22,7 +22,7 @@ const SignUp = ({children}) => {
       const email = form.email.value;
       const password = form.password.value;
       // console.log(name,email,password);
-      createUser(email,password)
+      createUser(name,email,password)
       .then(res=>{
           const user = res.user;
           // console.log(user);
