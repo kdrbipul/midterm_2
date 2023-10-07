@@ -67,6 +67,7 @@ nav button{
         flex-direction: column;
         gap:0;
         display: none;
+        margin-top: 2rem;
     }
     nav .nav_container .nav_menu li{
         width: 100%;

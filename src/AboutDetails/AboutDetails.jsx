@@ -12,13 +12,13 @@ const AboutDetails = () => {
     return (
         <>
             <section className="container mx-auto my-8 bg-transparent text-gray-100">
-                    <h1 className="text-5xl text-center	 font-bold leadi sm:text-4xl">ABOUT ME</h1>
+                    <h1 className="text-2xl text-center	 font-bold leadi sm:text-4xl">ABOUT ME</h1>
                     <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                         <div className="flex items-center justify-center rounded p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
                             <img src={picture} alt="" className="object-contain rounded-lg h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
                         </div>
                         <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                            <h1 className="text-5xl font-bold leadi sm:text-4xl">Hi! I'm a 
+                            <h1 className="text-2xl font-bold leadi sm:text-4xl">Hi! I'm a 
                                 <span className="text-violet-400"> MERN</span> Stack Developer
                             </h1>
                             <p className="mt-6 mb-8 text-lg sm:mb-12">That's great to hear! With your extensive experience in web design and development, you likely have a wealth of knowledge and skills in creating effective and user-friendly websites. 
