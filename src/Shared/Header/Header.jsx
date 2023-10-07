@@ -16,10 +16,29 @@ const Header = () => {
 		this.document.querySelector('nav').classList.toggle('window-scroll',window.scrollY>0);
 	});
 
+
+	const menu=document.querySelector('.nav_menu');
+	const menuBtn=document.querySelector('#open-menu-btn');
+	const closeBtn=document.querySelector('#close-menu-btn');
+
 	// Show Navbar
 	const showNavbar = () =>{
 		console.log("clicked the button");
-		navRef.current.classList.toggle('nav_menu')
+		if(showNavbar){
+			navRef.current.classList.add('nav_menu')
+			menu.style.display="block";
+			closeBtn.style.display="inline-block";
+			menuBtn.style.display="none";
+		}else{
+			
+			// const closeNav=()=>{
+			// 	navRef.current.classList.remove('nav_menu')
+			// 	menu.style.display="none";
+			// 	closeBtn.style.display="none";
+			// 	menuBtn.style.display="inline-block";
+			// }
+			// closeBtn.addEventListener('click',closeNav)
+		}	
 	}
 
 
