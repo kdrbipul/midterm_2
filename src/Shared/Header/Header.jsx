@@ -24,21 +24,19 @@ const Header = () => {
 	// Show Navbar
 	const showNavbar = () =>{
 		console.log("clicked the button");
-		if(showNavbar){
+		
 			navRef.current.classList.add('nav_menu')
 			menu.style.display="block";
 			closeBtn.style.display="inline-block";
 			menuBtn.style.display="none";
-		}else{
-			
-			// const closeNav=()=>{
-			// 	navRef.current.classList.remove('nav_menu')
-			// 	menu.style.display="none";
-			// 	closeBtn.style.display="none";
-			// 	menuBtn.style.display="inline-block";
-			// }
-			// closeBtn.addEventListener('click',closeNav)
-		}	
+		
+	}
+	// close Navbar
+	const closeNavbar = () => {
+		navRef.current.classList.remove('nav_menu')
+		menu.style.display="none";
+		closeBtn.style.display="none";
+		menuBtn.style.display="inline-block";
 	}
 
 
@@ -72,7 +70,7 @@ const Header = () => {
 						</div>
 					</ul>
 					<button id="open-menu-btn" onClick={showNavbar}><FaBars /></button>
-					<button id="close-menu-btn" onClick={showNavbar}><AiOutlineClose /></button>
+					<button id="close-menu-btn" onClick={closeNavbar}><AiOutlineClose /></button>
 				</div>
 			</nav>
         </>
