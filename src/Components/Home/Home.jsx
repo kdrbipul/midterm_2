@@ -2,19 +2,50 @@ import React from 'react';
 import { CiFacebook } from 'react-icons/ci';
 import { BsInstagram } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
+import { HiOutlineArrowUp } from 'react-icons/hi';
 import logo from '../../assets/images/girl-3.jpg'
 
-import "./Home.css"
 import Banner from '../Banner/Banner';
 import { NavLink } from 'react-router-dom';
 import Contact from '../Contact/Contact';
 import Avater from '../../Avater/Avater';
 import Team from '../Team/Team';
 import Mservice from '../Mservice/Mservice';
+import "./Home.css"
 
 const Home = () => {
+
+
+    let calcScrollValue=()=>{
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById ("progress-value");
+        let pos = document.documentElement.scrollTop;
+    
+        let calcHeight=document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        
+        let scrollValue = Math.round((pos*100)/calcHeight);
+        
+        if (pos >100){
+            scrollProgress.style.display ="grid";
+        }
+        else{
+            scrollProgress.style.display = "none";
+        }
+        scrollProgress.addEventListener("click", ()=>{
+            document.documentElement.scrollTop = 0;
+        });
+        scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+    }
+    window.onscroll= calcScrollValue;
+    window.onload= calcScrollValue;
+
+
+
     return (
         <>
+        <div id="progress">
+            <span id="progress-value"><HiOutlineArrowUp /></span>
+        </div>
         <section  className="home container mx-auto my-28" id="home">
         <div data-aos="fade-up-right" data-aos-duration="3000" className="home_left">
                 <h1 className='text-white'>Hi! Welcome to our website</h1>
