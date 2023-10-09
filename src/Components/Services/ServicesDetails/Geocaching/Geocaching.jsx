@@ -9,7 +9,7 @@ const Geocaching = () => {
                 <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                     <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                         <h1 className="text-5xl font-bold leadi sm:text-4xl">Experience the Thrill of  
-                            <span className="text-violet-400"> Cycling</span> in Dhar
+                            <span className="text-violet-400"> Geocaching</span> in Dhar
                         </h1>
                         <h1 className="text-5xl my-4 font-bold leadi sm:text-4xl">  
                             <span className="text-violet-400"> Overview:</span>
