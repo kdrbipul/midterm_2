@@ -48,9 +48,7 @@ const Geocaching = () => {
                     </div>
                 </div>
             </section>
-
         </>
     );
 };
-
 export default Geocaching;

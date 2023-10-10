@@ -4,7 +4,6 @@ import { BsInstagram } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
 import { HiOutlineArrowUp } from 'react-icons/hi';
 import logo from '../../assets/images/girl-3.jpg'
-
 import Banner from '../Banner/Banner';
 import { NavLink } from 'react-router-dom';
 import Contact from '../Contact/Contact';
@@ -14,8 +13,6 @@ import Mservice from '../Mservice/Mservice';
 import "./Home.css"
 
 const Home = () => {
-
-
     let calcScrollValue=()=>{
         let scrollProgress = document.getElementById("progress");
         let progressValue = document.getElementById ("progress-value");
@@ -38,8 +35,6 @@ const Home = () => {
     }
     window.onscroll= calcScrollValue;
     window.onload= calcScrollValue;
-
-
 
     return (
         <>
