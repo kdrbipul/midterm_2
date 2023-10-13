@@ -1,6 +1,9 @@
 import React from 'react';
+import UseTitle from '../DynamicTitle/UseTitle';
 
 const Contact = () => {
+	// Dynamic Title
+	UseTitle('contact');
     return (
         <div data-aos="fade-right" data-aos-duration="3000"data-aos-easing="ease-in-sine" className="grid max-w-screen-xl  shadow-lg hover:shadow-blue-500/50  grid-cols-1 gap-8 px-8 py-16 mx-auto mt-32 my-32	 rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-transparent text-slate-50">
 			<div data-aos="zoom-in" data-aos-duration="3000" className="flex flex-col justify-between">

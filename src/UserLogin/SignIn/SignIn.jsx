@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import UseTitle from '../../Components/DynamicTitle/UseTitle';
 import { AuthContext } from './../../UserContext/ContextApi';
 
 const SignIn = () => {
@@ -8,6 +9,9 @@ const SignIn = () => {
   const [success,setSuccess] = useState()
   const [error,setError] = useState()
   const [userEmail,setUserEmail] = useState()
+
+  // Dynamic Title
+  UseTitle('signin');
 
 
   // Email and password login process

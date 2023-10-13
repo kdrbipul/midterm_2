@@ -1,8 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import canoeing from '../../../../assets/images/canoeing.jpg'
+import UseTitle from '../../../DynamicTitle/UseTitle';
 
 const Canoeing = () => {
+    // Dynamic Title
+    UseTitle('canoeing');
     return (
        <>
 

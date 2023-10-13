@@ -11,8 +11,11 @@ import Avater from '../../Avater/Avater';
 import Team from '../Team/Team';
 import Mservice from '../Mservice/Mservice';
 import "./Home.css"
+import UseTitle from '../DynamicTitle/UseTitle';
 
 const Home = () => {
+    // Dynamic Title 
+    UseTitle('home')
     let calcScrollValue=()=>{
         let scrollProgress = document.getElementById("progress");
         let progressValue = document.getElementById ("progress-value");

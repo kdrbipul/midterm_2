@@ -13,11 +13,13 @@ import web6 from '../../assets/images/website7.jpg'
 import web7 from '../../assets/images/website8.jpg'
 import web8 from '../../assets/images/website9.jpg'
 import web9 from '../../assets/images/website10.jpg'
+import UseTitle from '../DynamicTitle/UseTitle';
 
 
 
 const Project = () => {
-	
+	// Dynamic Title
+	UseTitle('project');
     return (
         <>
 			<section className="products container mx-auto my-32">

@@ -11,8 +11,11 @@ import zipLining from '../../assets/images/zip-lining.jpg'
 import hiking from '../../assets/images/hiking.jpg'
 import geocaching from '../../assets/images/Geocaching.jpg'
 import { NavLink } from 'react-router-dom';
+import UseTitle from '../DynamicTitle/UseTitle';
 
 const Service = () => {
+    // Dynamic Title
+    UseTitle('service');
     return (
         <>
             <section data-aos="flip-left" data-aos-duration="3000" className="bg-gray-800 my-8 mt-32 text-gray-100 container mx-auto">

@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import UseTitle from '../Components/DynamicTitle/UseTitle';
 
 const Nothing = () => {
+	// Dynamic Title
+	UseTitle('nothing')
     return (
         <section className="container mx-auto my-32 flex items-center justify-center h-full p-16 bg-gray-900 text-gray-100">
 	<div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">

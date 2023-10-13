@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import UseTitle from '../../Components/DynamicTitle/UseTitle';
 import { AuthContext } from './../../UserContext/ContextApi';
 
 const SignUp = ({children}) => {
@@ -11,7 +12,8 @@ const SignUp = ({children}) => {
   // const [currentUser, setCurrentUser] = useState()
   // console.log(createUser);
 
-
+  // Dynamic Title
+  UseTitle('signup')
 
   // Gmail and password login
     const handleSignUp = (e) => {
