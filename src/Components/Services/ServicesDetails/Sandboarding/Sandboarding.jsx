@@ -1,8 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import sandboarding from '../../../../assets/images/sandboarding.jpg'
+import UseTitle from '../../../DynamicTitle/UseTitle';
 
 const Sandboarding = () => {
+    // Dynamic Title
+    UseTitle('sanboarding');
     return (
         <>
             <section data-aos="zoom-in" data-aos-duration="3000" className="container mx-auto my-16 bg-gray-800 text-gray-100">

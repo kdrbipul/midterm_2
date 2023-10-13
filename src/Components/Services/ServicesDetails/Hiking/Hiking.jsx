@@ -1,8 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import hiking from '../../../../assets/images/hiking2.jpg'
+import UseTitle from '../../../DynamicTitle/UseTitle';
 
 const Hiking = () => {
+    // Dynamic Title
+    UseTitle('hiking');
     return (
         <>
             <section data-aos="zoom-in" data-aos-duration="3000" className="container mx-auto my-16 bg-gray-800 text-gray-100">

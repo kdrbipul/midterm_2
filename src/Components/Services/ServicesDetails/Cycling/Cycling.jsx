@@ -1,8 +1,11 @@
 import React from 'react';
 import cycling from "../../../../assets/images/cycling.jpg"
 import { NavLink } from 'react-router-dom';
+import UseTitle from '../../../DynamicTitle/UseTitle';
 
 const Cycling = () => {
+    // Dynamic Title
+    UseTitle('cycling');
     return (
         <>
 

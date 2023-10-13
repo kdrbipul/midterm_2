@@ -1,8 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import geocaching from '../../../../assets/images/Geocaching.jpg'
+import UseTitle from '../../../DynamicTitle/UseTitle';
 
 const Geocaching = () => {
+    // Dynamic Title
+    UseTitle('geocaching');
     return (
         <>
             <section data-aos="zoom-in" data-aos-duration="3000" className="container mx-auto my-16 bg-gray-800 text-gray-100">

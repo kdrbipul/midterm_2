@@ -1,8 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import ziplining from '../../../../assets/images/zip-lining.jpg'
+import UseTitle from '../../../DynamicTitle/UseTitle';
 
 const ZipLining = () => {
+    // Dynamic Title
+    UseTitle('ziplining');
     return (
         <>
             <section data-aos="zoom-in" data-aos-duration="3000" className="container mx-auto my-16 bg-gray-800 text-gray-100">
