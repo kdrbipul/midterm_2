@@ -7,8 +7,11 @@ import { BiLogoVuejs } from 'react-icons/bi';
 import { SiReact } from 'react-icons/si';
 import { SiSvelte } from 'react-icons/si';
 import { FaPython } from 'react-icons/fa';
+import UseTitle from '../Components/DynamicTitle/UseTitle';
 
 const AboutDetails = () => {
+	// Dynamin Title
+	UseTitle('aboutmedetails');
     return (
         <>
             <section className="container mx-auto my-8 bg-transparent text-gray-100">

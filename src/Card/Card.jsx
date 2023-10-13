@@ -1,7 +1,10 @@
 import React from 'react';
 import picture from '../assets/images/girl-3.jpg'
+import UseTitle from '../Components/DynamicTitle/UseTitle';
 
 const Card = () => {
+	// Dynamic Title
+	UseTitle('card')
     return (
         <div className="flex flex-col justify-center mx-auto my-32 max-w-xs p-6 shadow-md rounded-xl sm:px-12 bg-green-500 text-gray-100">
 	<img src={picture} alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
